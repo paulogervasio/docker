@@ -2,7 +2,7 @@
 
 To install:
 
-Copy files Dockerfile and config.sql to the same folder.
+Copy files [Dockerfile](https://raw.githubusercontent.com/paulogervasio/docker/master/mysql/Dockerfile) and [config.sql](https://raw.githubusercontent.com/paulogervasio/docker/master/mysql/config.sql) to the same folder.
 Now run:
 ```
 $docker build -t=paulogervasio/mysql .;
