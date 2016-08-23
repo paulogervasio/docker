@@ -21,6 +21,10 @@ After install mysql-client just run:
 mysql -u root -h <YOUR_IP or HOSTNAME> -p;
 ```
 
+
+
+Add-on
+------------------------------------------------------------------------------
 To execute a container alredy created:
 
 1) get the container name:
