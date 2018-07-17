@@ -1,6 +1,12 @@
 # docker
 ## How to Execute Firefox using X
 
+- To get the Dockerfile
+```
+wget https://raw.githubusercontent.com/paulogervasio/docker/master/firefox/Dockerfile
+``'
+
+
 - To build the image, in the same folder where Dockerfile was created:
 
 ```
