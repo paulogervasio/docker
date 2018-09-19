@@ -12,7 +12,6 @@ express \
 express-graphql
 
 RUN npm install -g nodemon
-#RUN echo fs.inotify.max_user_watches=582222 | tee -a /etc/sysctl.conf && sysctl -p
 
 COPY "./assets/sysctl.conf" "/etc/sysctl.conf"
 
