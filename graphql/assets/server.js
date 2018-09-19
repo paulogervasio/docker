@@ -34,4 +34,4 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 app.listen(4000);
-console.log("listening 4000... try localhost:4000/graphql")
+console.log(" 12345... listening 4000... try localhost:4000/graphql")

@@ -11,5 +11,9 @@ RUN npm install --save graphql@^0.10.0 \
 express \
 express-graphql
 
-#ENTRYPOINT ["/usr/bin/node", "/graphql/server.js"]
+RUN npm install -g nodemon
+#RUN echo fs.inotify.max_user_watches=582222 | tee -a /etc/sysctl.conf && sysctl -p
+
+COPY "./assets/sysctl.conf" "/etc/sysctl.conf"
+
 EXPOSE 4000
