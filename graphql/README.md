@@ -1,31 +1,34 @@
 
-## GraphQL Docker enviroment for real-time development
+## Developing GraphQL using Docker
 
-This project pretends to be used run GraphQL apps running in debug mode using Docker.
+This project pretends to be used to build GraphQL apps running in <b><u>debug mode</u><b> using Docker.
+
 
 ### How:
 Choose a folder in your host that will be used for Docker to build the GraphQL app.
-Keep the GraphQL source files in your Docker host, it possible to use your favorite nodejs IDE to analyse, produce and debug the javascript code.
+
+Keep GraphQL source files in your Docker host, its possible use your favorite node IDE editor to analyse, produce and debug the javascript code.
+
 
 
 ### Instructions:
 
-#### Downloading the source files: 
+#### Download source files: 
 `git clone https://github.com/paulogervasio/docke:wr`
 
-navigate to graphql folder
+#### Navigate to graphql folder
 `cd graphql`
 
 
-#### Building image
+#### Build image
 `docker build -t paulogervasio:graphql .`
 
 
-#### Running container
+#### Run container
 ```docker run -ti --privileged  -v `pwd`/assets:/graphql -p 4000:4000 paulogervasio1:graphql nodemon /graphql/server.js```
 
 
 
-#### Wow! now your terminal is locked...  But you can use CTRL+pq to detach the container and release console
+##### Wow! now your terminal is locked...  But you can use CTRL+pq to detach the container and release console
 
-#### Have fun!
+##### Have fun!
