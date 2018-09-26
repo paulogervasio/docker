@@ -25,7 +25,7 @@ Keep GraphQL source files in your Docker host, its possible use your favorite no
 
 
 #### 4) Run container
-```docker run -ti --privileged  -v `pwd`/assets:/graphql -p 4000:4000 paulogervasio1:graphql nodemon /graphql/server.js```
+```docker run -ti --privileged  -v `pwd`/assets:/graphql -p 4000:4000 paulogervasio:graphql nodemon /graphql/server.js```
 
 
 ##### Wow! now your terminal is locked...  But you can use CTRL+pq to detach the container and release console
