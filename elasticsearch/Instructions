@@ -1,0 +1,57 @@
+from ubuntu
+
+apt-get -y update
+apt-get -y install wget
+apt-get -y install gnupg2
+
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
+
+
+apt-get -y install apt-transport-https
+
+
+
+echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | tee -a /etc/apt/sources.list.d/elastic-6.x.list
+
+
+### OpenJDk #######
+
+apt-get -y install software-properties-common
+
+add-apt-repository -y ppa:openjdk-r/ppa
+
+apt-get -y install openjdk-8-jdk
+
+###########################
+
+
+### Net Tools ############
+
+apt-get -y install curl
+apt-get -y install net-tools
+apt-get -y install vim
+###########################
+
+
+
+## Install effectively ############################################
+apt-get -y update && apt-get -y install elasticsearch
+
+
+
+
+### change to elasticsearch user#####
+
+chown elasticsearch -R /var/log/elasticsearch/
+
+docker exec -it --user elasticsearch 54fd86f48d61  bash
+
+
+:::in Dockerfile use 
+USER elasticsearch
+####
+
+
+
+cd /usr/share/elasticsearch/bin/
+./elasticsearch
